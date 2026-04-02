@@ -16,7 +16,7 @@ def total_ventas_ciclo(ventas):
     for venta in ventas:
         sumventa+= venta
     print(f"la suma es {sumventa} ")
-
+    return sumventa
     
 
 
@@ -24,5 +24,9 @@ def total_ventas_recursivo(ventas):
     """
     Retorna el total de ventas usando recursividad.
     """
-    # Escriba aquí su solución
-    pass
+    if not ventas:
+        return 0
+    
+    
+    else:
+        return ventas[0] + total_ventas_recursivo(ventas[1:])
