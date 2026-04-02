@@ -6,7 +6,10 @@ Debe implementar una versión iterativa y una recursiva.
 """
 
 def factorial_ciclo(n):
-    pass
+    fac = 1
+    for i in range (1, n+1):
+        fac = fac*n
+    return fac
 
 
 def factorial_recursivo(n):
