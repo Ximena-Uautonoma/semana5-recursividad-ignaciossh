@@ -26,7 +26,5 @@ def total_ventas_recursivo(ventas):
     """
     if not ventas:
         return 0
-    
-    
-    else:
+     else:
         return ventas[0] + total_ventas_recursivo(ventas[1:])
