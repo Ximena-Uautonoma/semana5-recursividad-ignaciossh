@@ -21,8 +21,8 @@ def suma_recursiva(n):
     """
     Retorna la suma de los primeros n números usando recursividad.
     """
-   if n <= 1:
-        return n
+    if n <= 1:
+         return n
     
     else:
         return n + suma_recursiva(n - 1)
